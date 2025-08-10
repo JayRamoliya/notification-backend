@@ -25,10 +25,26 @@ app.use(cors({
 app.use(express.json());
 
 const messages = [
-  "Hello! This is a random note.",
-  "Surprise! 🎉",
-  "FCM test message — enjoy!",
-  "Did you know? Random notification arrived."
+  "Hey Dev! Remember to push your latest commit 🚀",
+  "Bug found! Oh wait… it’s a feature 😏",
+  "FCM ping: Your code is running like a charm! 💻",
+  "Reminder: Drink coffee ☕ and check your console logs 🐛",
+  "Random Dev Tip: Save often, debug twice!",
+  "Build successful ✅… hopefully 🤞",
+  "Console.log is your best friend 🖤",
+  "Did you just fix it? Or break something else? 🤔",
+  "Code never lies, comments sometimes do 📜",
+  "Pull requests are like gifts 🎁 — review them with care",
+  "Keep calm and npm install 🔧",
+  "404 Motivation not found… try again later",
+  "If it works, don’t touch it… unless you’re feeling brave 😎",
+  "Git commit: ‘Final fix’ (for the 7th time)",
+  "Your code compiled without errors! Time to worry 😅",
+  "Test passed… in production 😬",
+  "Remember: Tabs over spaces… or start a holy war ⚔️",
+  "Coffee + Code = Happiness ☕💻",
+  "May your queries be fast and your bugs be few 🐞",
+  "Push code, not stress ❤️"
 ];
 
 app.post('/send-random', async (req, res) => {
@@ -59,4 +75,5 @@ app.post('/send-random', async (req, res) => {
 });
 
 app.listen(4000, () => console.log('Server running on http://localhost:4000'));
+
 
