@@ -45,7 +45,7 @@ app.post('/send-random', async (req, res) => {
       body: random
     },
     webpush: {
-      fcmOptions: { link: 'http://localhost:5173/' }
+      fcmOptions: { link: 'https://mynotification.netlify.app/' }
     }
   };
 
@@ -59,3 +59,4 @@ app.post('/send-random', async (req, res) => {
 });
 
 app.listen(4000, () => console.log('Server running on http://localhost:4000'));
+
